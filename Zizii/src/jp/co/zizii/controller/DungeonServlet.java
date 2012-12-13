@@ -31,7 +31,7 @@ public class DungeonServlet extends HttpServlet{
 			}
 		}
 		if(dungeon == null) resp.sendRedirect("/select_dungeon");
-
+		System.out.println("test");
 		HttpSession session = req.getSession();
 		Player player = (Player)session.getAttribute("player");
 		
